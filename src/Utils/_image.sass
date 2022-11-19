@@ -1,0 +1,23 @@
+=bgimg()
+    background: url($url)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+=covimg()
+    height: 100%
+    width: 100%
+    object-fit: cover
+=conimg()
+    height: 100%
+    width: 100%
+    object-fit: contain
+=ratio($w: null, $h: null, $r: 16/9)
+    height: $h
+    width: $w
+    aspect-ratio: $r
+=gradl($gradient)
+    background-image: linear-gradient($gradient)
+=gradr($gradient)
+    background-image: radial-gradient($gradient)
+=gradc($gradient)
+    background-image: conic-gradient($gradient)

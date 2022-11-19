@@ -1,0 +1,57 @@
+@import '../Utils/index'
+.nav
+    +box(fit-content, 100%, white)
+    +grid(1rem)
+    +pr(1rem)
+    +gtc(100px 1fr)
+    +bb(1px solid lightgrey)
+    .logo
+        +box(100%, 100px, red)
+    .lr
+        +flex(0, space-between, center)
+        .left
+            +flex(.5rem, center, center)
+            .input
+                +pbl(.3rem)
+                .input-block
+                    +relative
+                    +flex()
+                    +trans4
+                    +point
+                    +h(40px)
+                    +bb(1px solid grey)
+                    &:hover
+                        +bb(1px solid red)
+                    .a
+                        +flex(.3rem, 0, center)
+                        svg
+                            +font(25px)
+                            +trans4
+                            &:hover
+                                +color(red)
+                        input
+                            +box(100%, 17rem)
+                            +pin(.1rem)
+                            +font(13px)
+                            +point
+                    .b
+                        +flex(.5rem, center, center)
+                        +point
+                        +trans4
+                        +font(12px, 0, 600)
+                        &:hover
+                            +color(red)
+                    
+
+        .right
+            +flex(1.5rem, flex-end)
+            .wrapper
+                +trans4
+                +flexcenter(.5rem)
+                +point
+                +font(13px)
+                &:hover
+                    +color(red)
+                svg
+                    +font(20px)
+

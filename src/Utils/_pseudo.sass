@@ -1,0 +1,21 @@
+=pseudo($content: '', $t: null, $l: null, $b: null, $r: null, $h: null, $w: null, $bg: null, $c: null, $rad: null)
+    position: absolute
+    content: $content
+    top: $t
+    left: $l
+    bottom: $b
+    right: $r
+    height: $h
+    width: $w
+    background: $bg
+    color: $c
+    border-radius: $rad
+=pseudocover($bg: null, $rad: null)
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: $bg
+    border-radius: $rad

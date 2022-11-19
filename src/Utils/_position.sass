@@ -1,0 +1,60 @@
+=relative()
+    position: relative
+=absolute($t: null, $l: null, $r: null, $b: null)
+    position: absolute
+    top: $t
+    bottom: $b
+    right: $r
+    left: $l
+=absolutecover($bg: null)
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: $bg
+
+=absolutetl($t: null, $l: null)
+    position: absolute
+    top: $t
+    left: $l
+=absolutetr($t: null, $r: null)
+    position: absolute
+    top: $t
+    right: $r
+=absolutebl($b: null, $l: null)
+    position: absolute
+    bottom: $b
+    left: $l
+=absolutebr($b: null, $r: null)
+    position: absolute
+    bottom: $b
+    right: $r
+
+=fixed($t: null, $l: null, $r: null, $b: null)
+    position: fixed
+    top: $t
+    bottom: $b
+    right: $r
+    left: $l
+=static()
+    position: static
+=sticky($top: 0)
+    position: sticky
+    top: $top
+=unset()
+    position: unset
+=top($top)
+    top: $top
+=bottom($bottom)
+    bottom: $bottom
+=left($left)
+    left: $left
+=right($right)
+    right: $right
+
+=abscenter()
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

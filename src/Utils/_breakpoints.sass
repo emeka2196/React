@@ -1,0 +1,61 @@
+// <--------------- BREAK POINTS ---------------->
+$xsmall: 300px
+$small: 480px
+$medium: 720px
+$large: 960px
+$xlarge: 1200px
+$xxlarge: 1440px
+
+
+
+// <--------------- MEDIA QUERIES (MAX-WIDTH) ---------------->
+=XS
+    @media( max-width: $xsmall )
+        @content
+=SM
+    @media( max-width: $small )
+        @content
+=MD
+    @media( max-width: $medium )
+        @content
+=LG
+    @media( max-width: $large )
+        @content
+=XL
+    @media( max-width: $xlarge )
+        @content
+=XX
+    @media( max-width: $xxlarge )
+        @content
+
+
+
+// <--------------- MEDIA QUERIES (MIN-WIDTH) ---------------->
+=XS-M
+    @media( min-width: $xsmall )
+        @content
+=SM-M
+    @media( min-width: $small )
+        @content
+=MD-M
+    @media( min-width: $medium )
+        @content
+=LG-M
+    @media( min-width: $large )
+        @content
+=XL-M
+    @media ( min-width: $xlarge )
+        @content
+=XX-M
+    @media( min-width: $xxlarge )
+        @content
+
+
+// <--------------- MEDIA QUERIES (DIRECT) ---------------->
+
+=breakpointmax($bp: 0)
+    @media( max-width: $bp )
+        @content
+=breakpointmin($bp: 0)
+    @media( min-width: $bp )
+        @content

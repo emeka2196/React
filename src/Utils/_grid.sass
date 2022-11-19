@@ -1,0 +1,86 @@
+
+=grid($g: null, $j: null, $a: null, $f: null, $c: null, $r: null)
+    display: grid
+    gap: $g
+    justify-content: $j
+    align-content: $a
+    grid-auto-flow: $f
+    column-gap: $c
+    row-gap: $r
+=gridrepcol($gap: 0, $gac)
+    grid-auto-columns: $gac
+    display: grid
+    gap: $gap
+    grid-auto-flow: column
+=gridrepauto($gap: 0, $min, $rows: null)
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax($min, 1fr))
+    grid-gap: $gap
+    grid-auto-rows: $rows
+
+=gridc($g: null, $j: null, $a: null, $c: null, $r: null)
+    display: grid
+    grid-auto-flow: column
+    gap: $g
+    justify-content: $j
+    align-content: $a
+    column-gap: $c
+    row-gap: $r
+
+
+
+
+=gridr($g: null, $j: null, $a: null, $c: null, $r: null)
+    display: grid
+    grid-auto-flow: row
+    gap: $g
+    justify-content: $j
+    align-content: $a
+    column-gap: $c
+    row-gap: $r
+
+
+
+    
+=gtc($gtc)
+    grid-template-columns: $gtc
+=gtr($gtr)
+    grid-template-rows: $gtr
+
+
+=gar($gar)
+    grid-auto-rows: $gar
+=gta($gta)
+    grid-template-areas: $gta
+=gac($gac)
+    grid-auto-colums: $gac
+=gda($area)
+    grid-area: $area
+=gdc($column)
+    grid-column: $column
+=gdr($row)
+    grid-row: $row
+
+=gridcenter($g: null, $c: null, $r: null)
+    display: grid
+    justify-content: center
+    gap: $g
+    column-gap: $c
+    row-gap: $r
+    align-content: center
+
+=jself($justify)
+    justify-self: $justify
+=aself($align)
+    align-self: $align
+=jitems($pos)
+    justify-items: $pos
+=aitems($pos)
+    align-items: $pos
+
+=gap($gap)
+    gap: $gap
+=rgap($gap)
+    row-gap: $gap
+=cgap($gap)
+    column-gap: $gap

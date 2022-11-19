@@ -1,0 +1,86 @@
+=flex($g: null, $j: null, $a: null, $f: null, $c: null, $r: null, $w: null)
+    display: flex
+    gap: $g
+    justify-content: $j
+    align-items: $a
+    flex-direction: $f
+    column-gap: $c
+    row-gap: $r
+    flex-wrap: $w
+
+
+=flexc($g: null, $j: null, $a: null, $c: null, $r: null)
+    display: flex
+    flex-direction: column
+    gap: $g
+    justify-content: $j
+    align-items: $a
+    column-gap: $c
+    row-gap: $r
+
+
+
+=flexr($g: null, $j: null, $a: null, $c: null, $r: null)
+    display: flex
+    flex-direction: row
+    gap: $g
+    justify-content: $j
+    align-items: $a
+    column-gap: $c
+    row-gap: $r
+
+
+
+=flexcenter($gap: null)
+    display: flex
+    gap: $gap
+    justify-content: center
+    align-items: center
+
+    
+
+
+    
+=f($flex)
+    flex: $flex
+=fb($flex)
+    flex-basis: $flex
+=fg($flex)
+    flex-grow: $flex
+=fs($flex)
+    flex-shrink: $flex
+    
+=startcenter($gap: 0)
+    display: flex
+    gap: $gap
+    justify-content: flex-start
+    align-items: center
+=endcenter($gap: 0)
+    display: flex
+    justify-content: flex-end
+    gap: $gap
+    align-items: center
+
+=centerstart($gap: 0)
+    display: flex
+    gap: $gap
+    justify-content: center
+    align-items: flex-start
+=centerend($gap: 0)
+    display: flex
+    justify-content: center
+    gap: $gap
+    align-items: flex-end
+
+
+
+=gap($gap)
+    gap: $gap
+=rgap($gap)
+    row-gap: $gap
+=cgap($gap)
+    column-gap: $gap
+=wrap
+    flex-wrap: wrap
+=nowrap
+    flex-wrap: nowrap

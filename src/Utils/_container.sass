@@ -1,0 +1,58 @@
+=box($h, $w, $b: null, $p: null)
+    height: $h
+    width: $w
+    background: $b
+    padding: $p
+=circle($s, $b: null, $p: null)
+    height: $s
+    width: $s
+    border-radius: 50%
+    padding: $p
+    background: $b
+=square($s, $b: null, $p: null)
+    height: $s
+    width: $s
+    padding: $p
+    background: $b
+=h($h, $b: null)
+    height: $h
+    background: $b
+=maxh($h, $b: null)
+    max-height: $h
+    background: $b
+=minh($h, $b: null)
+    min-height: $h
+    background: $b
+=w($w, $b: null)
+    width: $w
+    background: $b
+=maxw($w, $b: null)
+    max-width: $w
+    background: $b
+=minw($w, $b: null)
+    min-width: $w
+    background: $b
+=percentage($b: null, $p: null)
+    height: 100%
+    width: 100%
+    background: $b
+    padding: $p
+=viewport($b: null, $p: null)
+    height: 100vh
+    width: 100vw
+    background: $b
+    padding: $p
+=wfit()
+    width: fit-content
+=hfit()
+    height: fit-content
+=shadow($shadow)
+    box-shadow: $shadow
+=ratio($w: null, $h: null, $r: 16/9)
+    width: $w
+    height: $h
+    aspect-ratio: $r
+=minc
+    width: min-content
+=maxc
+    width: max-content
